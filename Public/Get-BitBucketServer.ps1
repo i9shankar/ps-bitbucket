@@ -1,6 +1,6 @@
 <#
 .SYNOPSIS
-    Returns the currently used BitBucket Server address.
+    Returns the currently used BitBucket Server URL.
 .DESCRIPTION
     This cmdlet is a simple getter function for Set-BitBucketServer cmdlet.
 .EXAMPLE

@@ -25,6 +25,7 @@ function Set-BitBucketCredential {
         $Password=$Credential.GetNetworkCredential().password
     } else {
         $Password=[Runtime.InteropServices.Marshal]::PtrToStringAuto([Runtime.InteropServices.Marshal]::SecureStringToBSTR($Credential.password))
-    } 
+    }
+    $script:UserName=$UserName
     $script:AuthenticationToken=[Convert]::ToBase64String([Text.Encoding]::ASCII.GetBytes(("{0}:{1}" -f $UserName,$Password)))
 }

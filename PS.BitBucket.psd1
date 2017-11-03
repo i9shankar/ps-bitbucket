@@ -5,7 +5,7 @@
     RootModule            = 'PS.BitBucket.psm1'
 
     # Version number of this module.
-    ModuleVersion         = '1.0.0'
+    ModuleVersion         = '1.0.1'
 
     # ID used to uniquely identify this module
     GUID                  = '9f735f6c-b57e-416f-8637-fdee31ef6759'

@@ -2,7 +2,7 @@
 .SYNOPSIS
     Gets the current BitBucket Server information and version Detail.
 .DESCRIPTION
-    The cmdlet simply returns the
+    The cmdlet simply returns the application properties
 
 .EXAMPLE
     Get-BitBucketInfo

@@ -1,8 +1,10 @@
 <#
 .SYNOPSIS
-    Gets the size of all repos under given project.
+    Gets the size (in KB) of all repos under given project.
 .DESCRIPTION
-   
+
+.PARAMETER project
+    Mandatory - project id
 .EXAMPLE
     Get-BitBucketRepoSizeByProject -Project "TES"
 #>
@@ -15,7 +17,7 @@ function Get-BitBucketRepoSizeByProject {
     $Repos = Get-BitBucketRepoByProject -Project "$Project"
     foreach ($Repo in $Repos)
     {
-        $Manifest = Invoke-BitBucketWebRequest  -Resource "/projects/${Project}/repos/$Repo/sizes" -APIUrl "$script:BitBucketServer" | ConvertFrom-Json
+        $Manifest = Invoke-BitBucketWebRequest  -Resource "projects/${Project}/repos/$Repo/sizes" -APIUrl "$script:BitBucketServer" -APIVersion ""| ConvertFrom-Json
         [int]$intNum = [convert]::ToInt32($Manifest.repository)
         [int]$InKB = ${intNum}/1024
         write-host "${Repo}:${InKB}"

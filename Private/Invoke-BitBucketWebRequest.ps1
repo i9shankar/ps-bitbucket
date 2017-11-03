@@ -31,7 +31,7 @@ function Invoke-BitBucketWebRequest {
 
         [string]$ApiVersion='latest',
         [string]$Server = $script:BitBucketServer,
-        [string]$APIUrl="$Server/rest/api/$ApiVersion",
+        [string]$APIUrl="$Server/rest/api",
         [string]$BranchApiVersion='2.0',
         [string]$BranchPermissionApiUri="$Server/rest/branch-permissions/$BranchApiVersion/$Resource",        
         [string]$AuthenticationToken = $script:AuthenticationToken,
@@ -39,8 +39,8 @@ function Invoke-BitBucketWebRequest {
         [psobject]$Headers=@{},
         [psobject]$Body
     )
-    [string]$ResourceUrl="$APIUrl/$Resource"
-    write-host "[Info:] URI: $ResourceUrl, Method: $Method, AuthToken: $AuthenticationToken"
+    [string]$ResourceUrl="$APIUrl/$ApiVersion/$Resource"
+    #write-host "[Info:] URI: $ResourceUrl, Method: $Method, AuthToken: $AuthenticationToken"
     $Headers.Authorization = "Basic $AuthenticationToken"
     $WebRequestResponse = $null
 

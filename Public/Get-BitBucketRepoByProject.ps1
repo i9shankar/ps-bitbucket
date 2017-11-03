@@ -2,7 +2,9 @@
 .SYNOPSIS
     Gets the list of repos under given project.
 .DESCRIPTION
-   
+
+.PARAMETER project
+    Mandatory - project id
 .EXAMPLE
     Get-BitBucketRepoByProject -Project "TES"
 #>
