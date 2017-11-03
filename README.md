@@ -130,4 +130,4 @@ Apache License, Version 2.0 (see [LICENSE][LICENSE])
 [bitbucketapi]: https://developer.atlassian.com/static/rest/stash/latest/stash-rest.html
 [branchpermission]: https://developer.atlassian.com/static/rest/bitbucket-server/latest/bitbucket-ref-restriction-rest.html
 [license]: LICENSE.MD
-[branchpermissionimage]: https://github.com/i9shankar/ps-bitbucket/BranchPermission.png
+[branchpermissionimage]: https://github.com/i9shankar/ps-bitbucket/blob/master/images/BranchPermission.png
