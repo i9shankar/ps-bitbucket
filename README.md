@@ -1,4 +1,4 @@
-PS.BitBucket PowerShell module
+Powershell BitBucket module
 ==========================
 PS.BitBucket is a PowerShell module that provides cmdlets to intract with BitBucket instance. It uses most of the REST API reference availabe here [REST API][bitbucketAPI]   and few from other places like [Branch permission][branchpermission].
 
@@ -23,7 +23,7 @@ Import-Module $PSScriptRoot\PS.BitBucket.psm1 -force
 
 ## To start with
 
-Set BitBucket server URL and login Credentails, This will be used for all the command you run. In most cases, to get all full information, its good to have `admininstrator` access level.
+Set BitBucket server URL and login Credentails, This will be used for all the command you run. In most cases, to get full information, its good to have `admininstrator` level access.
 
 ### Set server URL
 ```powershell
@@ -87,11 +87,11 @@ New-BitBucketRepo -Project "TES" -Repository "ABC" -WithGitFlowBranch -SetBranch
 ```
 Note: I have added a standard branch permission, every org has different set of branch permission, to use your own org standard branch permission, write a file similar to `public\BranchPermission.json`. There are two ways to set custom branch permission
 
-1. you can do while crating a new repo
+1. Do while creating a new repo
 ```powershell
 New-BitBucketRepo -Project "TES" -Repository "ABC" -WithGitFlowBranch -SetBranchPermission -BranchPermissionJson "C:\BranchPer.json"
 ```
-2. You can change at later stage for existing repo
+2. Change at later stage for existing repo
 ```powershell
 Set-BranchPermission -Project "TES" -Repository "ABC" --BranchPermissionJson "C:\BranchPer.json"
 ```
