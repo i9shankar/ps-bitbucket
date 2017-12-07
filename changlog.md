@@ -7,6 +7,10 @@ and this project adheres to [Semantic Versioning](http://semver.org/spec/v2.0.0.
 ## [Unreleased]
 -
 
+## [1.1.2] - 2017-12-07
+
+- Few changes in manifest and readme for uploading on pagallery
+
 ## [1.0.1] - 2017-11-03
 ### Added
 - New options for `New-BitBucketRepo` 

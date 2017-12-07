@@ -59,7 +59,7 @@ New-BitBucketRepo -Project "TES" -Repository "ABC"
 
 ### Set the user full name and email (This required in order to get user real name when pushing new branches)
 ```powershell
-Set-UserFullNameAndEmail -FullName "admin admin" -EmailId "itsmeshankar1@gmail.com"
+Set-UserFullNameAndEmail -FullName "admin" -EmailId "itsmeshankar1@gmail.com"
 ```
 ### Create a new repository with gitflow branch (develop/master)
 ```powershell
