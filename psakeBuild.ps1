@@ -26,7 +26,7 @@ task Test -depends Analyze {
   }
 }
 
-Task Package -depends Test -precondition { return (${UnstableBranches}.Contains( $BranchName.ToLower())) } {
+Task Package -depends Test  {
     try{
         if(!$(Test-Path ${workingDirectory}\bin\)) { mkdir ${workingDirectory}\bin }
         $zipFileName = Join-Path ${workingDirectory}\bin\ "${ModuleName}.zip"
@@ -38,7 +38,7 @@ Task Package -depends Test -precondition { return (${UnstableBranches}.Contains(
     }
 }
 
-Task Deploy -depends Package -precondition { return  (${UnstableBranches}.Contains( $BranchName.ToLower())) } {
+Task Deploy -depends Package  {
   try{
         $version = Get-ManifestVersion "$ModuleName.psd1"
         $zipFileName = Join-Path ${workingDirectory}\bin\ "${ModuleName}.zip"

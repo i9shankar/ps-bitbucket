@@ -9,16 +9,11 @@ The module handles only authenticated method, it supports multiple funcationlity
 
 ## Getting Started
 
-PS.BitBucket is currently NOT available on [PowerShell Gallery ][powershellgallery], I will upload once have all the functionality added.
+PS.BitBucket is available on [PowerShell Gallery ][powershellgallery], You can install package if you have `PowerShellGet` installed already, otherwise you can follow the instruction to install from [PowerShell Gallery ][powershellgallery] here https://www.powershellgallery.com/.
 
-As of now, Please download and install the module manually from [GitHub][download] 
-
-## Usage
-After the Download and extract the zip, follow below instruction to start with
-
-## Import module
+## Install module
 ```powershell
-Import-Module $PSScriptRoot\PS.BitBucket.psm1 -force
+Install-Module -Name PS.BitBucket
 ```
 
 ## To start with
@@ -121,7 +116,7 @@ Created and maintained by [Shankar](<itsmeshankar1@gmail.com>).
 ## License
 Apache License, Version 2.0 (see [LICENSE][LICENSE])
 
-[powershellgallery]: https://www.powershellgallery.com/
+[powershellgallery]: https://www.powershellgallery.com/packages/PS.BitBucket
 [download]: https://github.com/i9shankar/ps-bitbucket/archive/master.zip
 [repository]: https://github.com/i9shankar/ps-bitbucket
 [wiki]: https://github.com/i9shankar/ps-bitbucket/blob/master/README.md

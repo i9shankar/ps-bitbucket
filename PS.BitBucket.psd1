@@ -5,13 +5,13 @@
     RootModule            = 'PS.BitBucket.psm1'
 
     # Version number of this module.
-    ModuleVersion         = '1.0.1'
+    ModuleVersion         = '1.1.2'
 
     # ID used to uniquely identify this module
     GUID                  = '9f735f6c-b57e-416f-8637-fdee31ef6759'
   
     # Author of this module
-    Author                = 'shankar'
+    Author                = 'i9shankar'
 
     # Company or vendor of this module
     CompanyName           = 'itsmeshankar1@gmail.com'
@@ -59,10 +59,20 @@
     # NestedModules = @()
 
     # Functions to export from this module
-    FunctionsToExport = 'New-BitBucketRepo','Set-BitBucketServer', 'Get-BitBucketServer', 'Set-BitBucketInfo', 'Set-BitBucketCredential', 'Get-BitBucketProjects', 'Get-BitBucketRepoByProject', 'Get-BitBucketAllRepo', 'Get-BitBucketRepoSizeByProject', 'Get-BitBucketAllRepoSize'
-
+    FunctionsToExport = @(
+        'New-BitBucketRepo'
+        'Set-BitBucketServer'
+        'Get-BitBucketServer'
+        'Set-BitBucketInfo'
+        'Set-BitBucketCredential'
+        'Get-BitBucketProjects'
+        'Get-BitBucketRepoByProject'
+        'Get-BitBucketAllRepo'
+        'Get-BitBucketRepoSizeByProject'
+        'Get-BitBucketAllRepoSize'
+    )
     # Cmdlets to export from this module
-    CmdletsToExport       = @()
+    CmdletsToExport       = '*'
 
     # Variables to export from this module
     # VariablesToExport = @()
@@ -85,16 +95,19 @@
         PSData = @{
 
             # Tags applied to this module. These help with module discovery in online galleries.
-            Tags         = @("Bitbucket", "")
+            Tags         = @("Bitbucket", "Powershell", "BitbucketAutomation", "Git", "Bitbucket-API")
 
             # A URL to the main website for this project.
-            ProjectUri   = ''
+            ProjectUri   = 'https://github.com/i9shankar/ps-bitbucket/'
 
             # A URL to an icon representing this module.
             # IconUri = ''
 
             # ReleaseNotes of this module
             ReleaseNotes = '
+                [1.1.2] Manifest change
+                [1.1.1] Moved functions to cmdlet
+                [1.1.0] Changes to match psgallery creteria
                 [1.0.0] Initial Version
             '
 
@@ -106,7 +119,7 @@
     } # End of PrivateData hashtable
 
     # HelpInfo URI of this module
-    HelpInfoURI           = ''
+    HelpInfoURI           = 'https://github.com/i9shankar/ps-bitbucket/'
 
     # Default prefix for commands exported from this module. Override the default prefix using Import-Module -Prefix.
     # DefaultCommandPrefix = ''
