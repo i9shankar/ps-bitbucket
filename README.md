@@ -5,7 +5,7 @@ PS.BitBucket is a PowerShell module that provides cmdlets to intract with BitBuc
 This allows fast access to [BitBucket][BitBucket] UI functions in automated way.
 
 The module handles only authenticated method, it supports multiple funcationlity of BitBucket in group manner (useful for Administrator to GET stats), Here are few example (Detailed below) supported:
-:`Project`, `Repo`, `Branch`, `BranchPermission`, `Size`, `ListOfRepos`, `CreateRepo`, `CurrentVersion`
+:`Project`, `Repo`, `Branch`, `BranchPermission`, `Size`, `ListOfRepos`, `CreateRepo`, `CreateBranch`, `CurrentVersion`
 
 ## Getting Started
 
@@ -105,6 +105,12 @@ Get-BitBucketRepoSizeByProject -Project "TES"
 ```powershell
 Get-BitBucketAllRepoSize
 ```
+
+### Create new branch
+```powershell
+New-CreateBranch -Project "TES" -Repository "TEST1" -SourceBranch "refs/heads/develop" -NewBranch "release/1.0"
+```
+
 
 ## Disclaimer/Issues
 

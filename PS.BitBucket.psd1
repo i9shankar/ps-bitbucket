@@ -5,7 +5,7 @@
     RootModule            = 'PS.BitBucket.psm1'
 
     # Version number of this module.
-    ModuleVersion         = '1.1.2'
+    ModuleVersion         = '1.1.3'
 
     # ID used to uniquely identify this module
     GUID                  = '9f735f6c-b57e-416f-8637-fdee31ef6759'
@@ -70,6 +70,7 @@
         'Get-BitBucketAllRepo'
         'Get-BitBucketRepoSizeByProject'
         'Get-BitBucketAllRepoSize'
+        'New-CreateBranch'
     )
     # Cmdlets to export from this module
     CmdletsToExport       = '*'
@@ -105,6 +106,7 @@
 
             # ReleaseNotes of this module
             ReleaseNotes = '
+                [1.1.3] Add New-CreatBranch function
                 [1.1.2] Manifest change
                 [1.1.1] Moved functions to cmdlet
                 [1.1.0] Changes to match psgallery creteria

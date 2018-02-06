@@ -6,10 +6,17 @@ and this project adheres to [Semantic Versioning](http://semver.org/spec/v2.0.0.
 
 ## [Unreleased]
 -
+## [1.1.3] - 2018-02-06
 
+### Added
+- Add new function to create branch `New-CreateBranch`
+
+### Changed
+-some of output variables
+s
 ## [1.1.2] - 2017-12-07
 
-- Few changes in manifest and readme for uploading on pagallery
+- Few changes in manifest and readme for uploading on psgallery
 
 ## [1.0.1] - 2017-11-03
 ### Added
