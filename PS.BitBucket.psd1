@@ -63,6 +63,7 @@
         'New-BitBucketRepo'
         'Set-BitBucketServer'
         'Get-BitBucketServer'
+        'Get-BitBucketInfo'
         'Set-BitBucketInfo'
         'Set-BitBucketCredential'
         'Get-BitBucketProjects'
@@ -71,6 +72,9 @@
         'Get-BitBucketRepoSizeByProject'
         'Get-BitBucketAllRepoSize'
         'New-CreateBranch'
+        'Set-UserFullNameAndEmail'
+        'Set-BranchPermission'
+        'Set-DefaultBranch'
     )
     # Cmdlets to export from this module
     CmdletsToExport       = '*'
